@@ -1,0 +1,25 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>无标题文档</title>
+<style>
+	div{width:100px;height:100px;background:#f90;}
+</style>
+<script>
+//这个问题提出来的同学您会了吗？ 你看你对我的表现满意吗？小窝囊
+	function changeStyle(sName,sVal){//var sName = ''
+		var oDiv = document.getElementById('div');
+		oDiv.style[sName] = sVal;	
+	}
+</script>	
+</head>
+
+<body>
+	<input type="button" value="变红" onclick="changeStyle('background','red')" />
+    <input type="button" value="变宽" onclick="changeStyle('width','200px')" />
+    <input type="button" value="变高" onclick="changeStyle('height','300px')" />
+    <div id="div">
+    </div>
+</body>
+</html>

@@ -1,0 +1,43 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>无标题文档</title>
+<script>
+window.onload = function(){
+	var oFather = document.getElementById('father');
+	var aP = oFather.getElementsByTagName('p');
+	
+	//alert(aP.length);
+	for(var i=0;i<aP.length;i++){
+		aP[i].style.color = 'red';
+	}
+	
+	var oErba = document.getElementById('erba');
+	var aSon = oErba.getElementsByClassName('son');
+	//alert(aSon);
+	for(var i=0;i<aSon.length;i++){
+		aSon[i].style.color = 'green';
+	}
+};
+</script>
+</head>
+
+<body>
+	<div id="father">
+    	<p>好哈听课哈</p>
+        <p>好哈听课哈</p>
+        <p>好哈听课哈</p>
+        <p>好哈听课哈</p>
+        <p>好哈听课哈</p>
+    </div>
+    <div id="erba">
+    	<p class="son">其实我不想获取你</p>
+        <p class="son">其实我不想获取你</p>
+        <p class="son">其实我不想获取你</p>
+        <p class="son">其实我不想获取你</p>
+        <p class="son">其实我不想获取你</p>
+        <p class="son">其实我不想获取你</p>
+    </div>
+</body>
+</html>

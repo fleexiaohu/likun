@@ -1,0 +1,26 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>无标题文档</title>
+<script>
+window.onload = function(){
+	var oDate = new Date();
+	var Y = oDate.getFullYear();
+	var M = oDate.getMonth()+1;
+	var D = oDate.getDate();
+	
+	var H = oDate.getHours();
+	var Min = oDate.getMinutes();
+	var S = oDate.getSeconds();
+	
+	var str = '此时此刻是：'+Y+'年'+M+'月'+D+'日'+H+'时'+Min+'分'+S+'秒';
+	
+	alert(str);	
+};
+</script>
+</head>
+
+<body>
+</body>
+</html>

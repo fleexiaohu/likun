@@ -1,0 +1,35 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>无标题文档</title>
+<script>
+window.onload  = function(){
+	var oFuture = new Date();
+	//oFuture.setYear()
+	oFuture.setMonth(9,1);
+	oFuture.setHours(0,0,0,0);
+	tickDown();
+	setInterval(tickDown,1000);
+	function tickDown(){
+		var oNow = new Date();
+		var total = parseInt((oFuture.getTime() - oNow.getTime())/1000);
+		
+		var Day = parseInt(total/86400);
+		total%=86400;
+		//alert(parseInt(total/3600));
+		var Hours = parseInt(total/3600);
+		total%=3600;
+		var Min = parseInt(total/60);
+		total%=60;
+		var S = total;
+		
+		document.title = Day+'-'+Hours+'-'+Min+':'+S;	
+	}
+};
+</script>
+</head>
+
+<body>
+</body>
+</html>

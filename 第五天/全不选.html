@@ -1,0 +1,33 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>无标题文档</title>
+<script>
+window.onload = function(){
+	var oBtn = document.getElementById('btn');
+	var oFather = document.getElementById('father');
+	var aInput = oFather.getElementsByTagName('input');
+	oBtn.onclick = function(){
+		for(var i=0;i<aInput.length;i++){
+			aInput[i].checked = false;
+		}	
+	};
+	
+};
+</script>
+</head>
+
+<body>
+	<input type="button" value="全不选" id="btn" />
+    <div id="father">
+    	<input type="checkbox" checked />
+   		<input type="checkbox" checked />
+        <input type="checkbox" checked />
+        <input type="checkbox" checked />
+        <input type="checkbox" checked />
+        <input type="checkbox" checked />
+        <input type="checkbox" checked />
+    </div>
+</body>
+</html>

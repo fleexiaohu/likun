@@ -1,0 +1,39 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>无标题文档</title>
+<style>
+	*{margin:0;padding:0;}
+	div{width:200px;height:200px;background:#ccc;border:1px solid red;text-align:center;line-height:200px;font-size:36px;font-weight:bold;display:none;}
+	.active{width:71px;background:#f90;}
+	.show{display:block;}
+</style>
+<script>
+	window.onload = function(){
+		var aBtn = document.getElementsByTagName('input');
+		var aDiv = document.getElementsByTagName('div');
+		for(var i=0;i<aBtn.length;i++){
+			aBtn[i].dataIndex = i;
+			aBtn[i].onclick = function(){
+				for(var i=0;i<aBtn.length;i++){
+					aBtn[i].className = '';
+				}
+				this.className = 'active';
+				var index = this.dataIndex;
+				
+			};
+		}
+	};
+</script>
+</head>
+
+<body>
+	<input class="active" type="button" value="小二电影" />
+    <input type="button" value="好大莱坞" />
+    <input type="button" value="高清无码" />
+    <div class="show">王宝强</div>
+    <div>杰森斯坦森</div>
+    <div>苍老师</div>
+</body>
+</html>

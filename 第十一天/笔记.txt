@@ -1,0 +1,26 @@
+﻿obj.currentStyle样式名字
+	IE
+getComputedStyle（obj,false）样式名字
+	高级浏览器
+
+setAttribute(属性名字，属性值)
+
+getAttribute（属性名）
+
+【定时器】
+	一次性
+		setTimeout
+		clearTimeout
+	周期性
+		setInterval
+			setInterval(函数，毫秒)
+		clearInterval
+	随机数
+		Math.random();
+		0-1
+		
+	作业
+		定时器弹出层
+		鼠标移入的时候不消失
+		鼠标移出消失
+

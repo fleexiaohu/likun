@@ -1,0 +1,31 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>无标题文档</title>
+<script>
+window.onload = function(){
+	setInterval(function(){
+		var oDate = new Date();
+		var Y = oDate.getFullYear();
+		var M = oDate.getMonth()+1;
+		var D = oDate.getDate();
+		var H = oDate.getHours();
+		var Min = oDate.getMinutes();
+		var S = oDate.getSeconds();
+		var str = '此时此刻时间:'+Y+'年'+toDub(M)+'月'+toDub(D)+'日'+toDub(H)+'时'+toDub(Min)+'分'+toDub(S)+'秒';
+		document.body.innerHTML=str;
+	},1000);
+	
+	function toDub(n){
+		return n>=10 ? n+'' : '0'+n;
+	}
+	
+};
+</script>
+</head>
+
+<body>
+	
+</body>
+</html>

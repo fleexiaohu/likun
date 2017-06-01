@@ -1,0 +1,37 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>无标题文档</title>
+<style>
+	div{width:50%;height:300px;background:#ccc;}
+</style>
+<script>
+window.onload = function(){
+	var oDiv = document.getElementById('div');
+	oDiv.onclick = function(){
+		//alert(this.width);
+		//alert(getComputedStyle(oDiv,false).height);
+		//alert(getStyle(oDiv,'width'));
+		//alert(getStyle(oDiv,'background'));
+		var aa = getStyle(oDiv,'width');
+		
+		alert(aa);
+	};
+	
+	function getStyle(obj,sName){
+		if(obj.currentStyle){
+			return obj.currentStyle[sName];
+		}else{
+			return getComputedStyle(obj,false)[sName];
+		}
+	}
+	
+};
+</script>
+</head>
+
+<body>
+	<div id="div"></div>
+</body>
+</html>

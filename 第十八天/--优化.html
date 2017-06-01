@@ -1,0 +1,40 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>无标题文档</title>
+<script>
+window.onload = function(){
+	var oRe = document.getElementById('reduce');
+	var oAdd = document.getElementById('add');
+	var oNum = document.getElementById('num');
+	var n = 0;
+	var timer = null;
+	oRe.onmousedown = function(){
+		timer = setInterval(function(){
+			n--;
+			oNum.value = n;
+		},30);
+	}
+	oAdd.onmousedown = function(){
+		timer = setInterval(function(){
+			n++;
+			oNum.value = n;
+		},30);
+	}
+	
+	oRe.onmouseup = oAdd.onmouseup = function(){
+		clearInterval(timer);
+	};
+	
+	
+};
+</script>
+</head>
+
+<body>
+	<input type="button" value="-" id="reduce" />
+    <input type="text" value="0" id="num" />
+    <input type="button" value="+" id="add" /> 
+</body>
+</html>

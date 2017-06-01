@@ -1,0 +1,25 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>无标题文档</title>
+<script>
+window.onload = function(){
+	var oRe = document.getElementById('reduce');
+	var oAdd = document.getElementById('add');
+	var oNom = document.getElementById('num');
+	var n = 0;
+	oRe.onclick = function(){
+		n--;
+		oNom.value = n;
+	}
+};
+</script>
+</head>
+
+<body>
+	<input type="button" value="-" id="reduce" />
+    <input type="text" value="0" id="num" />
+    <input type="button" value="+" id="add" /> 
+</body>
+</html>

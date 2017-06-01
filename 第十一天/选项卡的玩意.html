@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style>
+			* {
+				margin: 0;
+				padding: 0;
+			}
+			body{margin-left:40%;}
+			div {
+				width: 200px;
+				height: 200px;
+				background: #ccc;
+				border: 1px dashed red;
+				font-size: 36px;
+				font-weight: bold;
+				line-height: 200px;
+				text-align: center;
+				display:none;
+			}
+			.active{width:77px;background:#f90;}
+			.show{display:block;}
+		</style>
+<script>
+	window.onload = function(){
+		var aBtn = document.getElementsByTagName('input');
+		var aDiv = document.getElementsByTagName('div');
+		for(var i=0;i<aBtn.length;i++){
+			aBtn[i].index = i;
+			aBtn[i].onclick = function(){
+				for(var i=0;i<aBtn.length;i++){
+					aBtn[i].className = '';
+					aDiv[i].className = '';
+				}
+				this.className = 'active';
+				var index = this.index;
+				aDiv[index].className = 'show';
+			};
+		}
+	};
+</script>
+	</head>
+
+	<body>
+		<input class="active" type="button" value="电影" />
+		<input type="button" value="电话" />
+		<input type="button" value="电视" />
+		<input type="button" value="电脑" />
+		<div class="show">电影</div>
+		<div>电话</div>
+		<div>电视</div>
+		<div>电脑</div>
+	</body>
+
+</html>

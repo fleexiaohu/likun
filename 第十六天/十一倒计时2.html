@@ -1,0 +1,40 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>无标题文档</title>
+<script>
+window.onload = function(){
+	setInterval(function(){
+		var oNow = new Date();
+		var oFature = new Date();
+		//设置你想要的月份
+		//oFature.setMonth(10,0);
+		oFature.setMonth(9,1);
+		oFature.setHours(0,0,0,0);
+		//alert(oFature.getMonth());
+		
+		//把他们两个的中间差给算出来
+		var total = (oFature.getTime() - oNow.getTime())/1000;
+		var Day = parseInt(total/86400);
+		total%=86400;
+		var Hour = parseInt(total/3600);
+		total%=3600;
+		var M = parseInt(total/60);
+		total%=60;
+		var S = parseInt(total);
+		var str = '距离十一放假还有剩下'+toDub(Day)+'天'+toDub(Hour)+'小时'+toDub(M)+'分钟'+toDub(S)+'秒';
+		document.body.innerHTML = str;	
+	},1000);
+	
+	
+	function toDub(n){
+		return n>=10 ? n+'' : '0'+n;
+	}
+};
+</script>
+</head>
+
+<body>
+</body>
+</html>

@@ -1,0 +1,61 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>无标题文档</title>
+<script>
+window.onload = function(){
+	var oT = document.getElementById('txt');
+	//这是开始
+	var oStart = document.getElementById('start');
+	//this is stop nothing I ye bu hui
+	var oStop = document.getElementById('stop');
+	//this is reset
+	var oReset = document.getElementById('reset');
+	
+	
+	var timer = null;
+	var old = 0;
+	var n = 0;
+	oStart.onclick = function(){
+		if(old != 0){
+			n = old;
+		}else{
+			n = 0;
+		}
+		oStart.disabled = true;
+		timer = setInterval(function(){
+			n++;
+			var m = parseInt(n/60);	
+			var s = n%60;
+			oT.value = toDub(m)+':'+toDub(s);
+		},30);
+	};	
+	
+	oStop.onclick = function(){
+		oStart.disabled = false;
+		clearInterval(timer);
+		old = n;
+	}
+	
+	oReset.onclick = function(){
+		oStart.disabled = false;
+		clearInterval(timer);
+		oT.value = '00:00';
+		old = 0;
+	};
+	
+	function toDub(n){
+		return n>=10 ? ''+n : '0'+n;
+	}
+};
+</script>
+</head>
+
+<body>
+	<input type="text" id="txt" value="00:00" />
+    <input type="button" value="start" id="start" />
+    <input type="button" value="stop" id="stop" />
+    <input type="button" value="reset" id="reset" />
+</body>
+</html>

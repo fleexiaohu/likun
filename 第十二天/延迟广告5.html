@@ -1,0 +1,71 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>无标题文档</title>
+<style>
+	*{margin:0;padding:0;}
+	#box{width:100%;height:100px;background:#f90;position:absolute;top:0;left:0;z-index:1;display:none;}
+	#box2{width:100%;height:100px;background:#000;position:absolute;top:0;left:0;opacity:0;z-index:0;}
+</style>
+<script>
+window.onload = function(){
+	var oBox = document.getElementById('box');
+	var oBox2 = document.getElementById('box2');
+	var timer = null;
+	setTimeout(function(){
+		oBox.style.display = 'block';
+		timer = setTimeout(function(){
+			oBox.style.display = 'none';
+		},1500);
+	},1500);
+	oBox.onmouseover = function(){
+		clearTimeout(timer);	
+	};
+	oBox.onmouseout = function(){
+		oBox.style.display = 'none';
+		setTimeout(function(){
+			move(oBox2,'opacity',1,2000);
+		},2000);
+	}
+	
+	
+	
+	function move(obj,sName,target,time){
+		if(sName == 'opacity'){
+			var start = parseFloat(getStyle(obj,sName));
+		}else{
+			var start = parseInt(getStyle(obj,sName));
+		}
+		
+		var dis = target - start;
+		var n = 0;
+		var count = Math.floor(time/30);
+		var timer = setInterval(function(){
+			n++;
+			if(sName == 'opacity'){
+				obj.style[sName] = start+dis*n/count;
+			}else{
+				obj.style[sName] = start+dis*n/count+'px';
+			}
+			
+			if(n == count){
+				clearInterval(timer);
+			}
+		},30);
+		
+	}
+
+	function getStyle(obj,sName){
+		return (obj.currentStyle || getComputedStyle(obj,false))[sName];
+	};
+};
+</script>
+</head>
+
+<body>
+	<div id="box"></div>
+    <div id="box2"></div>
+	<img src="Koala.jpg" />
+</body>
+</html>

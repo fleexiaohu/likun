@@ -1,0 +1,28 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>无标题文档</title>
+<script>
+
+	var a = 18;
+
+	function show(){
+		var a  = 12;
+		//alert(a);
+		
+		return function(){
+			var a = 88;
+			return a;
+		}
+	}
+	var num = show()();
+	alert(num);
+	//alert(a);
+	
+</script>
+</head>
+
+<body>
+</body>
+</html>

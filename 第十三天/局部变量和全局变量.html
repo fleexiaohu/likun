@@ -1,0 +1,33 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>无标题文档</title>
+<script>
+	//1 局部变量是在函数体内声明的的吧
+	//2 局部变量可以使用全局的变量
+	//3 局部变量可以在局部覆盖全局的变量
+	//4 全部的不可以使用局部的
+	//5 局部变量只能在局部使用
+	//6 去掉var 以后 覆盖全局的变量
+	
+	var a = 18;
+	function show(){
+		//var a = 17;
+		//var b = 20;
+		//alert(a);	
+		a = 20;
+		//alert(a);
+	}
+	//alert(a);
+	//show();
+	//var b;
+	//alert(b);
+	show();
+	alert(a);
+</script>
+</head>
+
+<body>
+</body>
+</html>

@@ -1,0 +1,33 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>无标题文档</title>
+<style>
+	*{margin:0;padding:0;}
+	div{width:100px;height:100px;background:#ccc;}
+</style>
+</head>
+
+<body>
+	<input type="button" value="移入" id="btn" />
+	<div id="div"></div>
+</body>
+<script>
+	var oBtn = document.getElementById('btn');
+	var oDiv = document.getElementById('div');
+	
+	/*oBtn.onclick = function(){
+		alert(1);
+	};*/
+	//这是给按钮加鼠标移入事件
+	oBtn.onmouseover = function(){
+		///alert(1);
+		oDiv.style.display = 'none';
+	};
+	oBtn.onmouseout = function(){
+		//alert(2);
+		oDiv.style.display = 'block';
+	};
+</script>
+</html>

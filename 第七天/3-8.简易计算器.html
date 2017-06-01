@@ -1,0 +1,42 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="utf-8">
+<title>简易计算器</title>
+</head>
+<script>
+window.onload = function(){
+	var oBtn = document.getElementById('btn');
+	var oT1 = document.getElementById('t1');
+	var oT2 = document.getElementById('t2');
+	var oSe11 = document.getElementById('sel');	
+	oBtn.onclick = function(){
+		//alert(oT1.value);
+		//alert(typeof(oT1.value));
+		var num1 = parseFloat(oT1.value);
+		var num2 = parseFloat(oT2.value);
+		var sign =oSe11.value;
+		if(sign=='+'){
+			alert(num1+num2);
+		}else if(sign=='-'){
+			alert(num1-num2);
+		}else if(sign=='*'){
+			alert(num1*num2);
+		}else{
+			alert(num1/num2);
+		}
+	};
+};
+</script>
+<body>
+<input type="text" id="t1"/>
+<select id="sel">
+	<option value="+">+</option>
+	<option value="-">-</option>
+	<option value="*">*</option>
+	<option value="/">/</option>
+</select>
+<input type="text" id="t2"/>
+<input type="button" value="计算" id="btn" />
+</body>
+</html>

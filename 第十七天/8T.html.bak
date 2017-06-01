@@ -1,0 +1,24 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>无标题文档</title>
+<script>
+<!-- //	var n=0;
+//	var timer=setInterval(function (){
+//		if (n == 3)
+//		{
+//			clearInterval(timer);			
+//		}
+//		if(n >2){
+//			clearInterval(timer);
+//		}
+//		n++; 
+//		alert(n);
+//	}, 100); -->
+</script>
+</head>
+
+<body>
+</body>
+</html>

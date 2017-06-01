@@ -1,0 +1,119 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="keywords" content="xx"/>
+<meta name="description" content="xx"/>
+<title>无标题文档</title>
+<style>
+	*{margin:0; paddin:0; font-size:20px;}
+	#box{width:1280px; height:800px; border:1px dotted #fff; margin:3% auto;}
+	#left{width:610px; height:700px; display:inline-block; background:#000;
+			float:left;}
+	#gd{width:25px; height:800px; display:inline-block;float:left;
+		line-height:400px; text-align:center; margin-left:75px; color:blue;
+		font-weight:bold;}
+	#right{width:460px; height:700px; display:inline-block; background:#000;
+			float:right;}
+	#box span{width:120px; height:60px; background:#fff; margin-top:40px;
+				display:inline-block; margin-left:20px; text-align:center;
+				line-height:60px; font-weight:bold; color:#000;}
+	#btn1{margin-top:5%; float:right; background:green; color:#fff; margin-right:
+			20px; width:100px; height:50px; text-align:center;}
+	#btn2{margin-top:5%; float:left; background:red; color:#fff; margin-left:
+			20px; width:100px; height:50px; text-align:center;}
+	
+</style>
+<script>
+window.onload=function(){
+	var aSpan = document.getElementsByTagName('span');
+	var oBtn1 = document.getElementById('btn1');
+	var oBtn2 = document.getElementById('btn2');
+	var timer = null;	
+	oBtn1.onclick=function(){
+		oBtn1.disabled=true;
+		go();
+	}
+	function go(){
+		timer = setInterval(function(){
+			var i = parseInt(Math.random()*42);
+			for(var j=0; j<aSpan.length; j++){
+				aSpan[j].style.background='#fff';
+			}
+			aSpan[i].style.background='red';
+		},1000);
+	}
+	oBtn2.onclick=function(){
+		oBtn1.disabled=false;
+		clearInterval(timer);
+		for(var i=0;i<aSpan.length;i++){
+			if(aSpan[i].style.background == 'red'){
+				
+				if(i%2==0){
+					alert('^_^ '+aSpan[i].innerHTML+'，你怎么看！^_^');
+				}else if(i%3==0){
+					alert('^_^ '+aSpan[i].innerHTML+'，有点意识！^_^');
+				}else{
+					alert('^_^ '+aSpan[i].innerHTML+'，到你了！^_^');
+				}
+			}
+		}
+	}
+}
+</script>
+</head>
+
+<body>
+	<div id="box">
+		<div id="left">
+			<span>刑啸亮</span>
+			<span>刘斌</span>
+			<span>刘赵强</span>
+			<span>闫官帅</span>
+			<span>王明帅</span>
+			<span>李建超</span>
+			<span>樊家豪</span>
+			<span>赵安江</span>
+			<span>常瑞丽</span>
+			<span>张文婷</span>
+			<span>朱森林</span>
+			<span>陈天民</span>
+			<span>卫效均</span>
+			<span>梁震</span>
+			<span>索晓鹏</span>
+			<span>崔可欣</span>
+			<span>刑啸亮</span>
+			<span>古雅茹</span>
+			<span>崔晓莉</span>
+			<span>王丛</span>
+			<span>李志伟</span>
+            <span>王建军</span>
+            <span>李超</span>
+            <span>曹东升</span>
+			<input type="button" value="start" id="btn1"/>
+		</div>
+		<div id="gd">过道</div>
+		<div id="right">
+			<span>聂钟钥</span>
+			<span>闫来超</span>
+			<span>常晓东</span>
+			<span>杨紫琦</span>
+			<span>张悦</span>
+			<span>冯爽</span>
+			<span>凌星宇</span>
+			<span>苗慧龙</span>
+			<span>曹政</span>
+			<span>安冬</span>
+			<span>李睿</span>
+			<span>张刘岗</span>
+			<span>乐乐</span>
+			<span>潘京</span>
+			<span>晋博</span>
+			<span>朱彦龙</span>
+			<span>吕乐</span>
+			<span>田舰航</span>
+			<input type="button" value="stop！" id="btn2"/>	
+		</div>
+	</div>
+</body>
+</html>

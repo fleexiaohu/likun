@@ -1,0 +1,39 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>无标题文档</title>
+<script>
+	//byid不能改变父级
+	//bytagname
+	//byclassName
+window.onload = function(){
+	//必成我这样的服务态度您满意吗 大爷欢迎下次再来 你好不不要脸 谢谢
+	var oFather = document.getElementById('father');
+	//var oSon = oFather.getElementById('son');
+	//alert(oSon);
+	/*var aP = oFather.getElementsByTagName('p');
+	for(var i=0;i<aP.length;i++){
+		aP[i].style.color = 'red';
+	}	*/
+	var aP = oFather.getElementsByClassName('son');
+	for(var i=0;i<aP.length;i++){
+		aP[i].style.color = 'red';
+	}
+	
+};
+</script>
+</head>
+
+<body>
+	<div id="father">	
+    	<div id="son"></div>
+        <p class="son">我是专车司机，请你给我五星好评，不然我就是快车了</p>
+        <p class="son">我是专车司机，请你给我五星好评，不然我就是快车了</p>
+        <p class="son">我是专车司机，请你给我五星好评，不然我就是快车了</p>
+        <p class="son">我是专车司机，请你给我五星好评，不然我就是快车了</p>
+        <p class="son">我是专车司机，请你给我五星好评，不然我就是快车了</p>
+	</div>
+    <p class="son">你咋那么不要脸哪，谁让获取到我的</p>
+</body>
+</html>

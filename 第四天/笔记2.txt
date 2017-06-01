@@ -1,0 +1,40 @@
+alert();
+console.log();??
+onclick
+onmouseover
+onmouseout
+单引号不能套用单引号
+双引号不能套用双引号
+var a = 12;
+function show(){
+}
+show();???
+document.getElementById();//获取id
+document.getElementsByClassName('class名字'); //不兼容iE8-
+document.getElementsByTagName('html标签');
+先获取
+加事件
+操作
+document.write();
+window.onload = function(){};
+【while】
+	var i=0;
+	while(条件){
+		++
+		循环体；
+	}
+className class名字
+
+【变量区分不区分大小写】
+	区分
+	
+【改变父级】
+	getElementById() //不可以改变父级的
+	getElementsByTagName();//它是可以改变父级的
+	getElementsByClassName();//是可以改变父级的
+	
+【检测类型】
+	typeof()
+	
+
+

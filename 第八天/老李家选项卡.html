@@ -1,0 +1,40 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>无标题文档</title>
+<style>
+	*{margin:0;padding:0;}
+	div{width:200px;height:200px;background:#ccc;border:1px solid red;text-align:center;line-height:200px;font-size:36px;font-weight:bold;display:none;}
+	.active{width:100px;background:#f90;}
+	.show{display:block;}
+</style>
+<script>
+window.onload = function(){
+	var aBtn = document.getElementsByTagName('input');	
+	var aDiv = document.getElementsByTagName('div');
+	for(var i=0;i<aBtn.length;i++){
+		aBtn[i].index = i;
+		aBtn[i].onclick = function(){
+			for(var i=0;i<aBtn.length;i++){
+				aBtn[i].className = '';
+				aDiv[i].style.display = 'none';
+			}
+			this.className = 'active';
+			var index = this.index;
+			aDiv[index].style.display = 'block';	
+		};
+	}
+};
+</script>
+</head>
+
+<body>
+	<input class="active" type="button" value="男一号" />
+    <input type="button" value="女二号" />
+    <input type="button" value="妖三号" />
+    <div class="show">马辉</div>
+    <div>剥夺</div>
+    <div>星星</div>
+</body>
+</html>

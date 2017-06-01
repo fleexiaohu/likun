@@ -1,0 +1,66 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>无标题文档</title>
+<script>
+window.onload = function(){
+	var oBtn = document.getElementById('btn');	
+	var oDiv = document.getElementById('father');
+	var aInput = oDiv.getElementsByTagName('input');
+	//alert(aInput.length);
+	/*aInput[0].checked = true;
+	aInput[1].checked = true;
+	aInput[2].checked = true;
+	aInput[3].checked = true;
+	aInput[4].checked = true;
+	aInput[5].checked = true;
+	aInput[6].checked = true;
+	aInput[7].checked = true;*/
+	oBtn.onclick = function(){
+		//alert(1);
+		for(var i=0;i<aInput.length;i++){
+			aInput[i].checked = true;
+		}
+	};
+	
+};
+</script>
+</head>
+
+<body>
+	<input type="button" value="全选" id="btn" />
+    <div id="father">
+        <input type="checkbox" />
+        <input type="checkbox" />
+        <input type="checkbox" />
+        <input type="checkbox" />
+        <input type="checkbox" />
+        <input type="checkbox" />
+        <input type="checkbox" />
+         <input type="checkbox" />
+        <input type="checkbox" />
+        <input type="checkbox" />
+        <input type="checkbox" />
+        <input type="checkbox" />
+        <input type="checkbox" />
+        <input type="checkbox" />
+         <input type="checkbox" />
+        <input type="checkbox" />
+        <input type="checkbox" />
+        <input type="checkbox" />
+        <input type="checkbox" />
+        <input type="checkbox" />
+        <input type="checkbox" />
+        <input type="checkbox" />
+        <input type="checkbox" />
+        <input type="checkbox" />
+        <input type="checkbox" />
+        <input type="checkbox" />
+        <input type="checkbox" />
+        <input type="checkbox" />
+    </div>
+    <hr />
+    <input type="checkbox" checked />
+</body>
+</html>

@@ -1,0 +1,17 @@
+补零函数 toDub
+
+getStyle() //获取非行间样式
+
+定时器
+	周期性
+	var tiemr  =	setInterval(fn,ms)
+		clearInterval(timer);
+		
+	一次性的
+	
+	setTimeout(fn,ms)
+		clearTimeout();
+随机数
+	Math.random(); // 0 - 1 之间的小数
+
+

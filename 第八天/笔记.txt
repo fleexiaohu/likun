@@ -1,0 +1,118 @@
+&&
+	并且
+	同时为真才是真
+	一个为假都为假
+
+===	
+	它不仅仅比较值而且还要比较类型相等
+	
+||
+	或者
+	一个为真即为真
+	两个为假才是假
+	
+() 先算括号里面的
+
+！取反
+
+【比较运算符】
+	>= <= > < == === 
+	
+	+= -= %= *= /= 
+	
+【三位运算符】
+	？ ：   -----------？？？？？？
+	
+【自定义属性】
+	写在行间
+		不兼容高级浏览器
+【前缀】
+o  object  对象=元素=标签
+a  array   数组，组
+n  number  数字
+i  integer 整数
+f  float   浮点数、小数
+b  boolean 布尔值 true false
+s  string  字符串
+fn function 函数
+
+【三维运算符】
+	条件？满足以后走的这里 :不满足走的这里
+	条件 ？成立：不成立
+	
+	？ ： ？：
+	
+	if(){
+	
+	}
+	
+	if(){
+	
+	}else{
+	
+	}
+	
+	if(){
+	
+	}else if(){
+	
+	}else if(){
+	
+	}else{
+	
+	}
+
+【return】
+	return 后面代码不执行
+	它可以返回任何类型的东西
+	
+【undefined】
+	1、变量未定义 
+	2、函数未传参
+	3、只有return，没有值
+	4、函数没有返回值
+	5、变量定义了未赋值
+	
+【函数名字与变量名字同名的时候】
+	变量名字会覆盖与它同名的函数
+	如果不加() 就相等于这个函数体
+	函数不见()不执行
+【switch case】
+	var total = '你好';
+	switch(total){
+		case ’我不好‘:
+			alert(20);
+			break;
+		case 30:
+			alert(30);
+			break;
+		case 40:
+			alert(40);
+			break;
+		case 10:
+			alert(50);
+			break;
+		default:
+			alert('都不是');
+	}
+	var total = 10;
+	switch(total){
+		case 20:
+			alert(20);
+			break;
+		case 30:
+			alert(30);
+			break;
+		case 40:
+			alert(40);
+			break;
+		case 10:
+			alert(50);
+			break;
+		default:
+			alert('都不是');
+	}
+
+	
+	
+	

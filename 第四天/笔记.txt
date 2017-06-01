@@ -1,0 +1,78 @@
+声明变量关键字
+	var
+声明函数的关键字
+	funciton
+	
+弹出框
+	alert()
+控制台输出
+	console.log();
+
+事件
+	onclick //鼠标点击的时候
+	onmouseout //鼠标移出的时候
+	onmouseover //鼠标移入的时候
+注释
+	//
+	/* 内容 */
+	
+获取元素的方式
+	document.getElementById('id名字');
+	
+单引号不能套用单引号
+双引号不能套用双引号
+
+margin-left  marginLeft
+
+this 当前
+
+. 就是de的意思
+
+id 与 class
+
+如果js代码上面报错下面一律不执行
+
+window.onload //触发时机 当页面加载完成以后触发
+
+//for循环语法 var function
+
+for(){}
+
+++ 问题
+	就是自增1
+--
+
+document.write(写到页面的内容);
+
+【函数】	
+	函数的定义
+	
+	function 函数名(){
+		//函数体
+	}
+【函数的调用】
+	函数名();
+	
+	坤哥语录
+		函数就是一条狗哪里叫哪里走
+		
+【坤哥总结】
+	1、先获取
+	2、加事件
+	3、操作
+	
+【获取一组元素】
+	document.getElementsByTagName('标签名字');
+	它获取的是一组元素，它获取出来的对象有length属性
+	不能对一组元素直接操作
+	
+【获取一组元素】
+	document.getElementsByClassName('class名字');
+	谨记：
+		它不兼容低版本浏览器
+	它获取的是一组元素，它获取出来的对象有length属性
+
+
+
+
+	

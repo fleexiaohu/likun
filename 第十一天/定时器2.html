@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<script type="text/javascript">
+			var n = 10;
+			
+			var timer = setInterval(function(){
+				n--;
+				document.title = n;
+				if(n==3){
+					clearInterval(timer);
+				}
+			},1000);
+		
+		</script>
+	</head>
+	<body>
+	</body>
+</html>

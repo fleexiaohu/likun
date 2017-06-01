@@ -1,0 +1,51 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>无标题文档</title>
+<script>
+window.onload = function(){
+	var oTxt = document.getElementsByTagName('input')[0];
+	var oStart = document.getElementsByTagName('input')[1];	
+	var oStop = document.getElementsByTagName('input')[2];	
+	var oReset = document.getElementsByTagName('input')[3];
+	var n = 0;
+	var timer = null;
+	
+	//this is 开始
+	oStart.onclick = function(){
+		oStart.disabled = true;
+		timer = setInterval(function(){
+			n++;
+			var m = parseInt(n/60);
+			var s = n%60;
+			oTxt.value = '^_^  '+toDub(m)+':'+toDub(s)+'  ^_^';
+		},30);	
+	};	
+	//this is 暂停
+	oStop.onclick = function(){
+		oStart.disabled = '';
+		clearInterval(timer);	
+	};
+	
+	// this is 重置
+	oReset.onclick = function(){
+		oStart.disabled = '';
+		clearInterval(timer);
+		oTxt.value = '^_^  '+'00:00'+'  ^_^';
+		n=0;
+	};
+	function toDub(n){
+		return n>=10 ? n+'' : '0'+n;
+	}
+};
+</script>
+</head>
+
+<body>
+	<input type="text" id="txt" value="^_^ 00:00 ^_^"/>
+    <input type="button" value="start" id="start" />
+    <input type="button" value="stop" id="stop" />
+    <input type="button" value="reset" id="reset" />
+</body>
+</html>

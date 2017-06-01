@@ -1,0 +1,54 @@
+声明变量
+	var 
+	
+声明函数
+	function
+	
+鼠标事件
+	onclick
+		点击时候触发
+	onmouseover
+		鼠标移入的时候触发
+	onmouseout
+		鼠标移出的时候触发
+获取元素
+	document.getElementById('id名字');
+	
+弹框
+	alert();
+	console.log();
+
+
+单引号不能套用单引号
+双引号不能套用双引号
+
+margin-left  marginLeft
+
+注释
+	//
+	
+	/* 内容 */
+class与id
+
+	在行内写js代码的时候只能用id
+	
+js代码
+	如果前面报错后面代码不执行
+	
+window.onload //触发时机 页面加载完成以后才触发
+
+【for】
+	语法for(){}
+	
+	for(var i=0;i<5;i++){
+		alert(i);
+	}
+	搞定三层循环
+	
+js 里面我想用字符串的东西，必须用引号引起来，不然会报错
+
++
+	在js当中有字符串拼接的功能 它还有运算的功能
+	
+	
+

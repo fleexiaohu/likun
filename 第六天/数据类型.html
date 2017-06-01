@@ -1,0 +1,42 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>无标题文档</title>
+<script>
+	//string 字符串 不能进行运算
+	//字符串有引号，变量没有引号
+	//检测数据类型用typeof()
+	var str = '你们这帮傻孩子快把我气死了';
+	//alert(typeof(str));
+	//number
+	var num = '123';
+	//alert(typeof(parseInt(num)));
+	//undefined
+	//alert(typeof(a))
+	//object
+	window.onload = function(){
+		var oDiv = document.getElementById('div');
+		//alert(typeof(oDiv));	
+	};
+	//function
+	function show(){
+		alert(1);
+	}
+	var fnName = show;
+	
+	//fnName();
+	//alert(typeof(fnName));
+	
+	//boolean	true && false
+	alert(typeof(false));
+	
+</script>
+</head>
+
+<body>
+	<div id="div">
+    
+    </div>
+</body>
+</html>

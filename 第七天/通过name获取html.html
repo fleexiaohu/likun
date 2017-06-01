@@ -1,0 +1,27 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>无标题文档</title>
+<script>
+	window.onload = function(){
+		var oBtn = document.getElementById('btn');
+		var oCity = document.getElementsByName('city');	
+		//alert(oSel.length);
+		oBtn.onclick = function(){
+			oCity[0].style.background = 'red';
+		};
+	};
+</script>
+</head>
+
+<body>
+	<input type="button" value="点击" id="btn" />
+	<select name="city">
+    	<option>北京</option>
+        <option>上海</option>
+        <option>广州</option>
+        <option>东莞</option>
+    </select>
+</body>
+</html>

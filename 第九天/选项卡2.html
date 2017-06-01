@@ -1,0 +1,65 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>无标题文档</title>
+<style>
+	*{margin:0;padding:0;}
+	div{width:200px;height:200px;background:#ccc;border:1px solid red;text-align:center;line-height:200px;font-weight:bold;font-size:36px;display:none;}
+	.active{width:125px;background:#f90;}
+	.show{display:block;}
+</style>
+<script>
+window.onload = function(){
+	var aBtn = document.getElementsByTagName('input');
+	var aDiv = document.getElementsByTagName('div');
+	for(var i=0;i<aBtn.length;i++){
+		aBtn[i].index = i;
+		aBtn[i].onclick = function(){
+			for(var i=0;i<aBtn.length;i++){
+				aBtn[i].className = '';
+				aDiv[i].className = '';
+			}
+			aDiv[this.index].className = 'show';
+			this.className = 'active';
+		};
+	
+	}
+	var	timer = setInterval(next,2000)
+	aP.onmouseover = function(){
+	 clearInterval(timer);	
+	}
+	aP.onmouseout = function(){
+	 timer = setInterval(next,2000)	
+	}
+
+	function next(){
+	 iNew++;
+	 if(iNew== aA.length){
+	 iNew = 0;	 
+	 }	
+	 tab();
+	}
+		 function tab(){
+		  for(var i=0;i<aBtn.length;i++){
+		  aA[i].className = '';
+		  aDiv[i].className = '';
+	  }	
+ 		  aA[iNew].className = 'active';
+		  aP[iNew].className = 'show';
+	 }
+
+};
+//还欠着7遍
+</script>
+</head>
+
+<body>
+	<input class="active" type="button" value="电影" />
+    <input type="button" value="娱乐" />
+    <input type="button" value="综艺" />
+    <div class="show">电影</div>
+    <div>娱乐</div>
+    <div>综艺</div>
+</body>
+</html>

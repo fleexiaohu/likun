@@ -1,0 +1,51 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>无标题文档</title>
+<style>
+	*{margin:0;padding:0;}
+	.box{width:300px;height:200px;border:1px solid red;margin:50px auto;border-radius:5px;text-align:center;position:relative;}
+	.box div{width:280px;height:150px;background:#f90;margin:10px;display:none;text-align:center;line-height:150px;font-size:36px;font-weight:bold;color:tomato;}
+	input{margin-top:10px;}
+	.active{width:80px;background:#f90;}
+	.box .show{display:block;}
+	a{position:absolute;font-size:28px;color:pink;text-decoration:none;top:0;}
+	#prev{left:10px;}
+	#next{right:10px;}
+</style>
+<script>
+window.onload = function(){
+	var aBtn = document.getElementsByTagName('input');
+	var oBox = document.getElementById('box');
+	var aDiv = oBox.getElementsByTagName('div');
+	for(var i=0;i<aBtn.length;i++){
+		aBtn[i].index = i;
+		aBtn[i].onclick = function(){
+			for(var i=0;i<aBtn.length;i++){
+				aBtn[i].className = '';
+				aDiv[i].className = '';
+			}	
+			this.className = 'active';
+			aDiv[this.index].className = 'show';
+		};
+	}
+};
+</script>
+</head>
+
+<body>
+	<div class="box" id="box">
+    	<a id="prev" href="javascript:;">☜</a>
+        <a id="next" href="javascript:;">☞</a>
+   		<input class="active" type="button" value="中国" />
+        <input type="button" value="朝鲜" />
+        <input type="button" value="韩国" />
+        <input type="button" value="日本" />
+        <div class="show">毛主席</div>
+        <div>金正日</div>
+        <div>朴槿惠</div>
+        <div>苍老师</div>
+    </div>
+</body>
+</html>

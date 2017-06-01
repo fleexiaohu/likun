@@ -1,0 +1,47 @@
+
+自动播放选项卡
+
+日期对象
+-----------------
+文字时钟？？？？
+	
+倒计时
+
+多少天 多少小时 多少分钟 多少秒
+
+预习
+	eval() 执行字符串 必须符合js语法
+【数组操作】
+	arr.join()      数组变成字符串
+	arr.push() 		添加 后面
+	arr.unshift() 	添加 前面
+	arr.pop()  		删除 后面
+	arr.shift() 	删除 前面
+	arr.reverse()	翻转字符串
+	arr.concat()  拼接两个数组
+	arr.splice()  删除
+		删除
+			arr.splice(开始下标，个数);
+		插入
+			arr.splice(开始下标，0，内容...);
+		替换
+			arr.splice(开始下标，个数，内容...)
+	arr.sort() 排序
+		默认，排字符串
+			
+【字符串操作】
+	str.charAt()	字符串
+	str.indexOf()	从前查找
+	str.lastIndexOf() 从后查找
+	str.toUpperCase() 大写
+	str.toLowerCase() 小写
+	str.substring() 截取字符串
+	str.split() 把字符串变成 数组
+		
+作业 三遍
+
+单词
+
+文字时钟 没有例子的找小朋童鞋
+
+

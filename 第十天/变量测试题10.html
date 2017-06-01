@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	</head>
+	<script>
+		var a = -1;
+		var b = 2;
+		function show(a,b){
+			var tatal = a-- - --b + b++ - ++b - ++a + a--;
+			return function(){
+				alert(tatal);
+			}
+		}
+		alert(show()());
+	</script>
+	<body>
+	</body>
+</html>

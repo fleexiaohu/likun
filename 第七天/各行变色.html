@@ -1,0 +1,36 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>无标题文档</title>
+<style>
+	*{margin:0;padding:0;}
+	div{width:100%;height:20px;background:#ccc;margin:5px;}
+</style>
+<script>
+window.onload = function(){
+	var aDiv = document.getElementsByTagName('div');
+	//alert(aDiv.length);
+	for(var i=0;i<aDiv.length;i++){
+		if(i%2==0){
+			aDiv[i].style.background = '#000';
+		}else{
+			aDiv[i].style.background = '#f90';
+		}
+	}	
+};
+</script>
+</head>
+
+<body>
+	<div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+</body>
+</html>

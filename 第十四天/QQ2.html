@@ -1,0 +1,49 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>无标题文档</title>
+<style>
+	*{margin:0;padding:0;}
+	#head{width:100px;height:100px;background:#ccc;margin:70px;float:left;}
+	#detail{width:200px;height:200px;background:#f90;float:left;margin-top:70px;display:none;}
+</style>
+<script>
+window.onload = function(){
+	var oHead = document.getElementById('head');
+	var oDetail = document.getElementById('detail');
+	var timer = null;
+	oHead.onmouseover = function(){
+		clearTimeout(timer);
+		oDetail.style.display = 'block';	
+	};
+	
+	oHead.onmouseout = function(){
+		timer = setTimeout(function(){
+			oDetail.style.display = 'none';	
+		},200);	
+	};	
+	
+	oDetail.onmouseover = function(){
+		clearTimeout(timer);
+		oDetail.style.display = 'block';
+	}
+	
+	oDetail.onmouseout = function(){
+		//var _this = this;
+		clearTimeout(timer);
+		timer = setTimeout(function(){
+			oDetail.style.display = 'none';
+			
+		},200);
+		
+	}
+};
+</script>
+</head>
+
+<body>	
+	<div id="head"></div>
+    <div id="detail"></div>
+</body>
+</html>

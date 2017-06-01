@@ -1,0 +1,25 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>无标题文档</title>
+<script>
+window.onload = function(){
+	var oDate = new Date();
+	var Year = oDate.getFullYear();
+	var Month = oDate.getMonth()+1;
+	var Day = oDate.getDate();
+	
+	var Hours = oDate.getHours();
+	var Min = oDate.getMinutes();
+	var S = oDate.getSeconds();
+	
+	var str = Year+'-'+Month+'-'+Day+'-'+Hours+'-'+Min+'-'+S;	
+	document.body.innerHTML = str;
+};
+</script>
+</head>
+
+<body>
+</body>
+</html>

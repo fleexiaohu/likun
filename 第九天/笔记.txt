@@ -1,0 +1,136 @@
+1、滑动门 用的三个小标签 i i a 利用的行内快根据内容撑开的特点
+
+2、alert console.log  document.write
+
+3、onclick onmouseout onmouseover
+
+4、window.onload  //当页面加载完成的时候触发
+
+5、单不能套单，双不能套双
+
+6、var 
+
+7、function
+
+8、获取元素
+	getElementById //只有他不能改变父级
+	getElementsByTagName  //标签名字
+	getElementsByClassName //class 名字
+	getElementsByName //属性name
+9、for
+
+	for(var i=0;i<??;i++){
+	
+	}
+	
+10、js
+	获取
+	加事件
+	操作
+11、// /* */
+
+12、margin-left marginLeft
+
+13、function string boolean object undefined number
+
+14、false
+	0 ‘’ NaN null false undefined
+	
+15、字符串有引号，变量没有引号 字符串不能运算
+
+16 function show（）{} show() 函数不见括号不执行
+
+17、var i=0;
+	while(){
+	
+	}
+do while ???
+
+18、typeof
+
+19、if(){
+
+	}else if(){
+	
+	}else{
+	
+	}
+	
+20、点后面不能跟变量，中括号可以代替他
+
+21、变量未定义	
+	函数未传参
+	只有return没有值
+	函数没有返回值
+	变量定义未赋值
+	
+22、==
+
+23、！
+
+24、\ % += -= *= /=
+
+25、innerHTML html怎么写它就怎么写
+
+26、数组
+	var arr = [];
+	var arr = new Array();  ????
+	
+27、continue
+	break
+	
+28、switch(条件){
+	case 值1：
+		alert();
+		break；
+	default：
+		alert();
+	}
+29、Number parseFloat parseInt
+
+30、条件？真 ：假
+
+31、&&  ||  < > <= >= != === == 
+
+32、return 后面代码不执行，可以返回任何东西
+
+33、变量会覆盖函数
+
+34、isNaN() NaN永不等于NaN
+
+35、选项卡 99 
+
+36、if(i%2==0){
+		obj.style.background = '';
+	}else{
+		obj.style.background = '';
+	}
+37/this 当前操作对象
+【do...while...循环】
+	var i=0;
+	do{
+		i++;
+		alert(i);
+	}while(i<10);
+局部变量/函数
+	1、在函数体内声明的变量
+	2、局部变量可以在 局部 覆盖 全局变量
+	3、局部变量只能局部生效
+	4、局部的可以使用全局的变量
+	5、全局的不可以使用局部的
+
+全局变量
+	1、在整个script标签内都起作用
+	2、变量跟函数区别 只要函数声明了在上下都可以使用
+		但是变量只能在声明以后（下面）使用
+	3、局部的可以使用全局的
+	4、在函数外面定义的
+	
+【获取非行间样式】
+	obj.currentStyle.样式 它兼容IE
+	getComputedStyle(obj,false).样式 不兼容-IE8
+
+	
+
+
+

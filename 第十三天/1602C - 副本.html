@@ -1,0 +1,110 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="keywords" content="xx"/>
+<meta name="description" content="xx"/>
+<title>无标题文档</title>
+<style>
+	*{margin:0; paddin:0; font-size:20px;}
+	#box{width:1280px; height:800px; border:1px dotted #fff; margin:3% auto;background:#ccc;}
+	#left{width:610px; height:700px; display:inline-block;
+			float:left;}	
+	#right{width:660px; height:700px; display:inline-block;
+			float:right;}
+	#box span{width:120px; height:60px; background:#fff; margin-top:40px;
+				display:inline-block; margin-left:20px; text-align:center;
+				line-height:60px; font-weight:bold; color:#000;}
+	#btn1{margin-top:5%; float:right; background:green; color:#fff; margin-right:
+			20px; width:100px; height:50px; text-align:center;}
+	#btn2{margin-top:5%; float:left; background:red; color:#fff; margin-left:
+			20px; width:100px; height:50px; text-align:center;}
+	
+</style>
+<script>
+window.onload=function(){
+	var aSpan = document.getElementsByTagName('span');
+	var oBtn1 = document.getElementById('btn1');
+	var oBtn2 = document.getElementById('btn2');
+	var timer = null;	
+	oBtn1.onclick=function(){
+		oBtn1.disabled=true;
+		go();
+	}
+	function go(){
+		timer = setInterval(function(){
+			var i = parseInt(Math.random()*36);
+			for(var j=0; j<aSpan.length; j++){
+				aSpan[j].style.background='#fff';
+			}
+			aSpan[i].style.background='red';
+		},30);
+	}
+	oBtn2.onclick=function(){
+		oBtn1.disabled=false;
+		clearInterval(timer);
+		for(var i=0;i<aSpan.length;i++){
+			if(aSpan[i].style.background == 'red'){
+				
+				if(i%2==0){
+					alert('^_^ '+aSpan[i].innerHTML+'，你怎么看！^_^');
+				}else if(i%3==0){
+					alert('^_^ '+aSpan[i].innerHTML+'，有点意识！^_^');
+				}else{
+					alert('^_^ '+aSpan[i].innerHTML+'，到你了！^_^');
+				}
+			}
+		}
+	}
+}
+</script>
+</head>
+
+<body>
+	<div id="box">
+		<div id="left">
+            <span>马辉</span>
+            <span>陈晨</span>
+            <span>王彪猛</span>
+            <span>宋宏伟</span>
+			<span>李凯</span>
+			<span>于含水</span>
+			<span>王超岗</span>
+			<span>马文</span>
+			<span>王毕成</span>
+			<span>刘玉</span>
+			<span>薛文凯</span>
+            <span>魏三帅</span>
+			<span>孙夏楠</span>
+			<span>甄海鹏</span>
+			<span>刘祥</span>
+			<span>许浩</span>
+			<span>武明</span>
+			<span>冯小虎</span>
+			
+			<input type="button" value="start" id="btn1"/>
+		</div>
+		<div id="right">
+			<span>李坤</span>
+			<span>常鑫</span>
+			<span>孙兴龙</span>
+			<span>张磊</span>
+			<span>张磅礴</span>
+			<span>李柏杨</span>
+			<span>祁宝宏</span>
+			<span>刘海鹏</span>
+			<span>李江</span>
+			<span>周琪</span>
+			<span>杜江</span>
+			<span>范宇壮</span>
+			<span>赵艺凯</span>
+			<span>张魏强</span>
+			<span>靳宝</span>
+			<span>王克正</span>
+			<span>刘振伟</span>
+			<span>白剑飞</span>
+			<input type="button" value="stop！" id="btn2"/>	
+		</div>
+	</div>
+</body>
+</html>

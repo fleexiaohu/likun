@@ -1,0 +1,105 @@
+while
+º¯Êý´«²Î
+¸Ä±äclassName
+	className
+	
+¿ÉÒÔ¸Ä±ä¸¸¼¶µÄÓÐ
+	tagName
+	className
+²»¿ÉÒÔ¸Ä±äµÄÊÇ
+	byid
+¼ì²âÀàÐÍ
+	typeof()
+
+Ç°ÈýÌìµÄ¶«Î÷£º
+	for(){
+	
+	}
+	
+µ¯¿ò
+	alert();
+µã»÷ÊÂ¼þ
+	onclick
+ÒÆÈë
+	onmouseover
+ÒÆ³ö
+	onmouseout
+	
+var a = 12;
+function show(){
+
+}
+
+show();
+console.log();
+window.onload = function(){}
+
+document.write();
+Êý¾ÝÀàÐÍ
+	string
+	number
+.length
+
+¡¾±äÁ¿Óë×Ö·û´®µÄÇø±ð¡¿
+	±äÁ¿Ã»ÓÐÒýºÅ
+	×Ö·ûÍ³Í³ÓÃÒýºÅÒýÆðÀ´
+	
+¡¾.ÓëÖÐÀ¨ºÅµÄÇø±ð¡¿
+
+	.ºóÃæ²»ÄÜ¸ú±äÁ¿
+	¡¾¡¿¿ÉÒÔ´úÌæ.
+	
+¡¾if¡¿
+	if(Ìõ¼þ){
+	
+	}
+	
+	if(Ìõ¼þ){  //true false
+		ÕæÇø¼ä
+	}else{
+		¼ÙÇø¼ä
+	}
+	
+	if(false){ //¼Ù
+		alert(1);
+	}else{
+		alert(2);	
+	}
+	
+	
+	if(Ìõ¼þ){
+	
+	}else if(Ìõ¼þ){
+	
+	}else{
+	
+	}
+	
+== ÊÇ±È½ÏÁ½¸öÖµÏàµÈ²»ÏàµÈ £¡È¡·´µÄÒâË¼
+
+¡¾Êý¾ÝÀàÐÍ¡¿
+	string ×Ö·û´®
+	number Êý×Ö
+	boolean	²¼¶ûÖµ
+		true && false
+	object ¶ÔÏó
+	function º¯Êý
+	undefined Î´¶¨Òå
+	
+¡¾falseµÄ¼¸ÖÖÇé¿ö¡¿
+	¿Õ×Ö·û´® ×¢Òâ£ºÒýºÅÀïÃæÁ¬Ò»¸ö¿Õ¸ñ¶¼²»ÄÜÓÐ
+	0Êý×Ö¶¼Îª¼Ù ·Ç0µÄÊý×Ö¶¼ÎªÕæ
+	false 
+	undefined
+	null
+	NaN
+¡¾undefined¡¿³öÏÖµÄ¼¸ÖÖÇé¿ö
+	1¡¢±äÁ¿Î´¶¨Òå
+	
+¡¾number¡¿
+	parseFloat
+	parseInt
+	Number
+
+	
+

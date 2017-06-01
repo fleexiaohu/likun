@@ -1,0 +1,11 @@
+鼠标事件
+
+	onmouseover
+	onclick
+	onmouseout
+	
+	onmousedown //鼠标摁下
+	onmouseup //鼠标弹起
+	
+	得到焦点	onfocus
+	失去焦点    onblur
